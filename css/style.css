@@ -1,0 +1,461 @@
+/* Banner */
+
+.banner{
+  background: url("../img/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-position: 600px;
+  background-size: cover;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+  position: relative;
+  z-index: 1;
+}
+
+.color-bg{
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(252,173,0,1) 0%, rgba(254,208,0,1) 48%, rgba(255,229,0,0.38) 100%);
+}
+
+.color-bg .container{
+  gap:100px;
+}
+
+.info p{
+  max-width: 600px;
+  line-height: 1.2cm;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 60px 0px;
+}
+
+.logo{
+  max-width: 600px;
+  margin-right: 5rem;
+}
+
+.info button{
+  margin: 0px 60px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: #033F88;
+  color: #fff; 
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+}
+
+.info button img{
+  position: absolute;
+  top: -15px;
+  left: -60px;
+  transform: scale(1.2);
+}
+
+/* SOBRE */
+
+.history-board{
+  width: 100vw;
+  position: relative;
+  justify-content: center;
+  padding: 150px 0px;
+}
+
+.history-board .container{
+  column-gap: 80px;
+}
+
+.info-text{
+  max-width: 600px;
+  position: relative;
+}
+
+.info-text h1{
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.info-text h1::before{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 110px;
+  height: 10px;
+  background: #FDB500;
+}
+
+.info-text p{
+  color: #222;
+  font-size: 1.25rem;
+  line-height: 0.8cm;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.info-text a{
+  color: #FDB500;
+  font-size: 1.25rem;
+}
+
+.out-playbutton{
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  background-color: #F0A500;
+  cursor: pointer;
+  align-self: center;
+  font-size: 20px;
+  left: -40px;
+  z-index: 1;
+}
+
+.video-sobre{
+  max-width: 678px;
+  position: relative;
+}
+
+.video-sobre video{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* COMBOS */
+
+.section-combos{
+  width: 100vw;
+  background: url("../img/combos_back.jpg");
+  background-size: cover;
+  justify-content: center;
+  position: relative;
+}
+
+.combo-itens{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 50px;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 250px;
+}
+
+.combo{
+  position: relative;
+  height: 450px;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1 1 400px;
+}
+
+.row .combo:nth-child(1){
+  background: url('../img/Combo1.png');
+  background-attachment: fixed;
+}
+
+.row .combo:nth-child(2){
+  background: url('../img/Combo2.png');
+  background-attachment: fixed;
+}
+
+.row .combo:nth-child(3){
+  background: url('../img/Combo3.png');
+  background-attachment: fixed;
+}
+
+.row .combo:nth-child(4){
+  background: url('../img/Combo4.png');
+  background-attachment: fixed;
+}
+
+.combo-price{
+  position: absolute;
+  max-width: 500px;
+  top: 100px;
+}
+
+.combo-info{
+  position: relative;
+  height: 180px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+  top: 90px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.combo-info label:nth-child(1){
+  position: relative;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #222;
+  top: 20px;
+}
+
+.combo-info label:nth-child(2){
+  position: relative;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue', cursive;
+  top: 10px;
+}
+
+/* WORK SPACE */
+
+.section-work{
+  width: 100vw;
+  padding: 200px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-work .container{
+  flex-direction: column;
+}
+
+.section-work h1{
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 0px;
+}
+
+.work-options{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.option{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex: 1 1 350px;
+}
+
+.option h2{
+  position: relative;
+  font-size: 150px;
+  color: rgba(1,1,1, 0.1);
+  font-weight: bold;
+}
+
+.option img{
+  position: relative;
+  transform: scale(1.5);
+  top: -60px;
+}
+
+.option label{
+  position: relative;
+  top: -30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+}
+
+.option p{
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  color: #222;
+}
+
+/* LOCALIZAÇÃO */
+
+.localization{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/localizacao-bg.jpg');
+  background-attachment: fixed;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+}
+
+.localization .container{
+  justify-content: center;
+  gap: 150px;
+}
+
+.map{
+  height: 500px;
+  position: relative;
+  width: 600px;
+  border-radius: 30px;
+  top: 80px;
+  background: url('../img/teste.jpg');;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+}
+
+.info-local{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+
+.info-local h1{
+  position: relative;
+  margin:20px 0px;
+}
+
+.info-local h1::before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 110px;
+  height: 10px;
+  background: #033F88;
+}
+
+.info-local h1 i{
+  margin: 0px 15px;
+}
+
+.info-local span{
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 5px 0px;
+}
+
+/* CONTATO */
+
+.contato{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.contato .container{
+  position: relative;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.contato-info{
+  flex-direction: column;
+}
+
+.contato-info h1{
+  display: flex;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.contato-info p{
+  font-size: 1.25rem;
+}
+
+.hold-phone{
+  position: absolute;
+  bottom: 0px;
+  left: 300px;
+  align-self: center;
+}
+
+.form-contato{
+  width: 600px;
+  display: grid;
+  grid-template-areas: 
+  "nome sobrenome"
+  "telefone telefone"
+  "select select"
+  "area area"
+  "button button";
+  gap: 20px;
+}
+
+.nome-input{
+  width: 100%;
+  grid-area: nome;
+}
+
+.sobrenome-input{
+  width: 100%;
+  grid-area: sobrenome;
+}
+
+.tel-input{
+  width: 100%;
+  grid-area: telefone;
+}
+
+.select-input{
+  width: 100%;
+  grid-area: select;
+}
+
+.area-input{
+  width: 100%;
+  grid-area: area;
+}
+
+.form-contato input,
+.form-contato select{
+  background: none;
+  height: 60px;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 0px 25px;
+}
+
+.form-contato textarea{
+  resize: none;
+  font-family: 'Lato', sans-serif;
+  background: none;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 20px 25px 10px 25px;
+}
+
+.contato-button{
+  grid-area: button;
+  justify-content: flex-end;
+}
+
+.contato-button button{
+  height: 50px;
+  padding: 0px 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  align-self: flex-end;
+  color: #fff;
+  background: #F0A500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

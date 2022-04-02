@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <title>Patrícia Festas</title>
+</head>
+
+
+<body>
+  <section class="banner">
+    <div class="banner-before"></div>
+    <div class="menu-logo">
+      <a href="index.html"><img src="img/logo.png" alt="Logo Patrícia Festas" class="img-logo"></a>
+    </div>
+    <div class="moonstar">
+
+      <div class="login">
+        <div class="roller">
+          <img src="img/logincell.svg" alt="">
+          <button id="roller-btn">Entrar</button>
+        </div>
+
+        <div class="login-form">
+          <i class="fas fa-user-circle"></i>
+          <span>Entrar</span>
+          <form action="">
+            <div class="formulario">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Senha">
+              <input type="submit" value="Entrar">
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="register">
+        <i class="fas fa-user-circle"></i>
+        <span>Criar Conta</span>
+        <form action="cadastro.jsp" method="POST" name="formcadastro">
+          <div class="formulario">
+            <input type="text" name="txtnome" placeholder="Nome">
+            <input type="email" name="txtemail" placeholder="Email">
+            <input type="password" name="txtsenha" placeholder="Senha">
+            <input type="submit" value="Cadastrar">
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <script src="js/login.js"></script>
+  </section>
+</body>

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&display=swap');
+
+.banner-sobre{
+  width: 100vw;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F2F2F2;
+  background: url("../img/aboutus.svg");
+}
+
+.banner-sobre .container{
+  gap: 150px;
+}
+
+.sobre-info{
+  max-width: 700px;
+}
+
+.sobre-info h1{
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color:  #033F88;
+}
+
+.sobre-info p{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: justify;
+  color: #fff;
+}
+
+/* EMPRESA INFO */
+
+.bussiness-info{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 200px;
+  position: relative;
+  top: -200px;
+  background-color: #F2F2F2;
+  z-index: -1;
+}
+
+.bussiness-info .container{
+  gap: 50px;
+}
+
+.card{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  top: 100px;
+  height: 500px;
+  flex: 1 1 400px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 5px 10px 100px 0px rgba(0,0,0,0.25);
+}
+
+.card-image{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #033F88;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(41,109,192,1) 0%, rgba(3,63,136,1) 100%);
+}
+
+.card-image h1{
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.icon{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.card-info{
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 35px;
+  color: #222;
+  padding: 35px;
+}
+
+/* EQUIPE */
+
+.team{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+.team img{
+  max-width: 700px;
+  border-radius: 30px;
+}
+
+.team .container{
+  gap: 100px;
+}
+
+.team-info{
+  align-self: flex-start;
+  padding: 30px 0px;
+}
+
+.team-info h1{
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.team-info h1::before{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 110px;
+  height: 10px;
+  background: #FDB500;
+}
+
+.team-info p{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: justify;
+  color: #222;
+}
+
+
+/* WORK SPACE */
+
+.section-work{
+  width: 100vw;
+  padding: 50px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-work .container{
+  flex-direction: column;
+}
+
+.section-work h1{
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 0px;
+}
+
+.work-options{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.option{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex: 1 1 350px;
+}
+
+.option h2{
+  position: relative;
+  font-size: 150px;
+  color: rgba(1,1,1, 0.1);
+  font-weight: bold;
+}
+
+.option img{
+  position: relative;
+  transform: scale(1.5);
+  top: -60px;
+}
+
+.option label{
+  position: relative;
+  top: -30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+}
+
+.option p{
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  color: #222;
+}
+
+/* VIDEO */
+.video{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+.out-playbutton{
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  background-color: #F0A500;
+  cursor: pointer;
+  align-self: center;
+  font-size: 20px;
+  left: -40px;
+  z-index: 1;
+}
+
+.video-sobre{
+  position: relative;
+}
+
+.video-sobre video{
+  max-width: 100%;
+  border-radius: 10px;
+}

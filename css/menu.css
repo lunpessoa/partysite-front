@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&display=swap');
+
+
+*:focus{
+  border: none;
+  outline: none;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+video .pause{
+  display: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #222;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.display-flex{
+  display: flex !important;
+}
+
+.container{
+  width: 1600px;
+  padding: 20px;
+  margin: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blue{
+  color: #0059A9;
+}
+
+.green{
+  color: #339966;
+}
+
+.orange{
+  color:#F47A00;
+}
+
+.purple{
+  color: #8047CF;
+}
+
+/* Menu */
+.menu-bg{
+  width: 100vw;
+  background: transparent;
+  position: fixed;
+  border: none;
+  z-index: 999;
+  transition: 0.3s all;
+}
+
+.menu-bg.color{
+  background-color: #FDB500;
+}
+
+.menu{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.menu-logo{
+  max-width: 130px;
+  margin: 0px 10px 0px 10px;
+}
+
+.menu-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+}
+
+.menu-nav a{
+  display: block;
+  margin: 16px;
+  text-transform: uppercase;
+  color: #033F88;
+  font-weight: 700;
+}
+
+.menu-nav li:last-child a{
+  margin: 16px 50px;
+  padding: 12px 20px;
+  background-color: #033F88;
+  color: #fff; 
+  border-radius: 6px;
+}
+
+/* RODAPÉ */
+
+footer{
+  display: flex;
+  background: #FAFAFA;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container{
+  padding: 100px 20px;
+  flex-direction: column;  
+}
+
+footer a{
+  color: #222;
+}
+
+.address,
+.services,
+.more-info,
+.flag-card{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+}
+
+.flag-card img{
+  width: fit-content;
+}
+
+.footer-info{
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-info h2{
+  margin-bottom: 50px;
+}
+
+.address span,
+.more-info span,
+.services a{
+  margin: 5px 0px;
+}
+
+.social{
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: 1.125rem;
+}
+
+.copyright{
+  margin-top: 100px;
+  font-weight: bold;
+  align-self: flex-start;
+}

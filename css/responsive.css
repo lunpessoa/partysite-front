@@ -1,0 +1,229 @@
+@media (max-width: 1450px) {
+  .banner {
+    background-position: 200px;
+  }
+
+  .logo {
+    max-width: 500px;
+    margin-right: 0px;
+  }
+
+  .info p {
+    font-size: 1.75rem;
+  }
+
+  .hold-phone {
+    left: 100px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .logo {
+    max-width: 350px;
+    margin-right: 0px;
+  }
+
+  .history-board .container {
+    flex-direction: column;
+  }
+
+  .info-text {
+    max-width: 100%;
+    margin: 50px 0px;
+  }
+
+  .video-sobre {
+    max-width: 100%;
+  }
+
+  /* COMBOS */
+
+  .row {
+    gap: 150px !important;
+  }
+
+  .combo {
+    height: 400px;
+  }
+
+  .combo-price {
+    transform: scale(0.8);
+    top: 80px;
+  }
+
+  /* LOCALIZAÇÃO */
+
+  .local-itens {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  /* CONTATO */
+
+  .combo-info label:nth-child(2) {
+    font-size: 100px;
+  }
+
+  .hold-phone {
+    left: auto;
+    opacity: 0.2;
+    width: 500px;
+  }
+
+  .contato .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato-info {
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .map {
+    height: 600px;
+    width: 90%;
+    top: 80px;
+  }
+
+  .local-itens {
+    flex-direction: column-reverse;
+  }
+
+  .info-local {
+    top: 50px;
+  }
+
+  /* MENU HAMBURGUER */
+  .menu-nav{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    transition: 0.5s ease;
+    background-color: #033F88;
+  }
+
+  .menu-nav.active{
+    right: 0%;
+  }
+
+  .menu-nav ul{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-nav a {
+    color: #fff;
+  }
+
+  .menu-nav li:last-child a {
+    margin: 16px 50px;
+    padding: 12px 20px;
+    background-color: #FFF;
+    color: #033F88;
+    border-radius: 6px;
+  }
+
+  .hamburguer {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #033F88;
+    cursor: pointer;
+    z-index: 999;
+    position: relative;
+  }
+
+  .hamburguer::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 30px;
+    top: 30%;
+    left: 15%;
+    transition: 1s ease;
+  }
+
+  .hamburguer::before {
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 30px;
+    top: 50%;
+    left: 40%;
+    transition: 1s ease;
+  }
+
+  #hamburguer:checked~label .hamburguer::after {
+    transform: rotate(225deg);
+    background-color: #fff;
+    top: 45%;
+    left: 15%;
+  }
+
+  #hamburguer:checked~label .hamburguer::before {
+    transform: rotate(-405deg);
+    background-color: #fff;
+    width: 70%;
+    top: 45%;
+    left: 15%;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    background-image: none;
+  }
+
+  .color-bg {
+    background: linear-gradient(90deg, rgba(252, 173, 0, 1) 0%, rgba(254, 208, 0, 1) 100%);
+  }
+
+  .color-bg .container {
+    gap: 20px;
+    flex-direction: column-reverse
+  }
+}
+
+@media (max-width: 724px) {
+
+  .address,
+  .services,
+  .more-info,
+  .flag-card {
+    align-items: center;
+  }
+
+  .copyright {
+    align-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .map {
+    height: 300px;
+  }
+
+  .form-contato {
+    width: 100vw;
+    padding: 0px 20px;
+    grid-template-areas:
+      "nome"
+      "sobrenome"
+      "telefone"
+      "select"
+      "area"
+      "button";
+  }
+}

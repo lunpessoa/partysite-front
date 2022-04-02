@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&display=swap');
+
+
+*:focus{
+  border: none;
+  outline: none;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+video .pause{
+  display: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #222;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes toLeft {
+	0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes toRight {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+.banner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  position: relative;
+}
+
+.banner-before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 45vh;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+  background: linear-gradient(-45deg, #FED000, #FCAD00, #286CBF, #04418A);
+  background-size: 400% 400%;
+  animation-name: toRight;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.menu-logo{
+  position: absolute;
+  top:0;
+  left: 0;
+  max-width: 130px;
+  margin: 30px;
+}
+
+.moonstar{
+  width: 1000px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 5px 10px 11px 0px rgba(0,0,0,0.25);
+  border-radius: 40px;
+  z-index: 999;
+}
+
+.login{
+  width: 55%;
+  height: 100%;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  z-index: 1;
+}
+
+.roller button{
+  border: none;
+  color: #033F88;
+  max-width: 200px;
+  align-self: center;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(252,173,0,1) 0%, rgba(253,201,0,1) 100%);
+}
+
+.roller{
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background: linear-gradient(180deg, rgba(41,109,192,1) 0%, rgba(3,63,136,1) 100%);
+  transition: 0.5s ease;
+  z-index: 3;
+}
+
+.roller.slideContainer{
+  transform: translateX(82%);
+}
+
+.login-form{
+  width: 80%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  gap: 15px;
+  z-index: 2;
+}
+
+.login-form i{
+  font-size: 54px;
+  color: #033F88;
+}
+
+.login-form span{
+  font-size: 38px;
+  font-weight: bold;
+  color: #033F88;
+  margin-bottom: 30px;
+}
+
+.register{
+  width: 45%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.register i{
+  font-size: 54px;
+  color: #033F88;
+}
+
+.register span{
+  font-size: 38px;
+  font-weight: bold;
+  color: #033F88;
+  margin-bottom: 30px;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input[type="submit"]{
+  border: none;
+  color: #033F88;
+  max-width: 200px;
+  padding: 12px 40px;
+  border-radius: 50px;
+  margin-top: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(252,173,0,1) 0%, rgba(253,201,0,1) 100%);
+}
+
+.formulario input{
+  border: none;
+  background: #D7D7D7;
+  color: #222;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 14px 20px;
+}
+
+.formulario input::placeholder{
+  color: #fff;
+}
+
+.container{
+  width: 1600px;
+  padding: 20px;
+  margin: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+}

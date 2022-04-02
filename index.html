@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <title>Patrícia Festas</title>
+</head>
+
+<body>
+  <header class="menu-bg">
+    <div class="menu display-flex">
+      <div class="menu-logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Patrícia Festas" class="img-logo"></a>
+      </div>
+      <input type="checkbox" style="display: none;" id="hamburguer">
+      <label for="hamburguer" id="button-hamburguer">
+        <div class="hamburguer"></div>
+      </label>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="">Produtos</a></li>
+          <li><a href="">Galeria</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="">Sign up</a></li>
+          <li><a href="login.html">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="color-bg display-flex">
+      <div class="container display-flex">
+        <div class="info">
+          <p>Decoração, Buffet, Brinquedos e Artigos para a festa do seus sonhos. Cadastre-se e faça parte desse <b>Novo
+              Mundo</b></p>
+          <div>
+            <button>
+              <img src="img/buttonAdd.svg" alt="balloon account">
+              <span>cadastre-se</span>
+            </button>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo Patrícia Festas" class="img-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history-board display-flex">
+    <div class="container display-flex">
+      <div class="section-info">
+        <div class="info-text">
+          <h1>
+            Sobre a Patrícia Festas!
+          </h1>
+          <p>
+            O Buffet Patrícia Festas é uma empresa de festas e eventos,
+            temos como missão realizar sonhos de crianças, jovens e adultos através de um serviço profissional.
+            Proporcionando um serviço de qualidade além de superar as expectativas com responsabilidade,
+            comprometimento, pontualidade e fidelidade.
+          </p>
+          <a href="">Veja Mais..</a>
+        </div>
+      </div>
+      <div class="video-sobre display-flex">
+        <button id="playbutton" class="out-playbutton"><i class="fas fa-play"></i></button>
+        <iframe width="678" height="420" src="https://www.youtube.com/embed/764LWIRJq_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-combos display-flex">
+    <div class="combo-itens container display-flex">
+
+      <div class="row">
+        <div class="combo">
+          <div class="combo-price">
+            <img src="img/cmb1.png" alt="">
+          </div>
+          <div class="combo-info">
+            <label>quantidade de itens</label>
+            <label class="blue">16 itens</label>
+          </div>
+        </div>
+
+        <div class="combo">
+          <div class="combo-price">
+            <img src="img/cmb2.png" alt="">
+          </div>
+          <div class="combo-info">
+            <label>quantidade de itens</label>
+            <label class="green">14 itens</label>
+          </div>
+        </div>
+
+        <div class="combo">
+          <div class="combo-price">
+            <img src="img/cmb3.png" alt="">
+          </div>
+          <div class="combo-info">
+            <label>quantidade de itens</label>
+            <label class="orange">11 itens</label>
+          </div>
+        </div>
+
+        <div class="combo">
+          <div class="combo-price">
+            <img src="img/cmb4.png" alt="">
+          </div>
+          <div class="combo-info">
+            <label>quantidade de itens</label>
+            <label class="purple">10 itens</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-work display-flex">
+    <div class="container display-flex">
+      <h1>O que fazemos?</h1>
+      <div class="work-options">
+        <div class="option">
+          <h2>01</h2>
+          <img src="img/festa.svg" alt="">
+          <label for="">Festas</label>
+          <p>Realizamos sonhos com muito carinho e dedicação </p>
+        </div>
+
+        <div class="option">
+          <h2>02</h2>
+          <img src="img/buffet.svg" alt="">
+          <label for="">Buffet</label>
+          <p>Serviço de buffet completo </p>
+        </div>
+
+        <div class="option">
+          <h2>03</h2>
+          <img src="img/shows.svg" alt="">
+          <label for="">Shows</label>
+          <p>Musica e Dj </p>
+        </div>
+
+        <div class="option">
+          <h2>04</h2>
+          <img src="img/coffee-cup.svg" alt="">
+          <label for="">Coffee Break</label>
+          <p>Serviço para empresas que desejam passar uma boa impressão </p>
+        </div>
+      </div>
+  </section>
+
+  <section class="localization">
+    <div class="container display-flex">
+      <div id="map" class="map"></div>
+      <div class="info-local">
+        <h1>Localização <i class="fas fa-map-marked-alt"></i></h1>
+        <span>Av. Prefeito João Pires Filho,</span>
+        <span>122, 13 de Maio</span>
+        <span>Santa Isabel - SP</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <img class="hold-phone" src="img/holding-phone.svg" alt="">
+    <div class="container display-flex">
+      <div class="contato-info display-flex">
+        <h1>Contato <img src="img/contact-book.svg" alt=""></h1>
+        <p>Duvidas sobre a plataforma? Entre em contato e adiquira mais informações sobre de sua festa!</p>
+      </div>
+      <form action="#">
+        <div class="form-contato">
+          <input type="text" class="nome-input" placeholder="Nome">
+          <input type="text" class="sobrenome-input" placeholder="Sobrenome">
+          <input type="text" class="tel-input" placeholder="Telefone">
+          <select name="" class="select-input" id="">
+            <option value="">Selecione o Serviço</option>
+          </select> <textarea name="" class="area-input" id="" cols="30" rows="6" placeholder="Informações"></textarea>
+          <div class="contato-button display-flex">
+            <button type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container display-flex">
+      <div class="footer-info display-flex">
+        <div class="address">
+          <h2>Endereço</h2>
+          <span>Av. Prefeito João Pires Filho,</span>
+          <span>122, 13 de Maio</span>
+          <span>Santa Isabel - SP</span>
+        </div>
+        <div class="services">
+          <h2>Serviços</h2>
+          <a href="">Produtos</a>
+          <a href="">Galeria</a>
+          <a href="">Informações</a>
+          <a href="#contato">Contato</a>
+          <a href="">Termos & Condutas</a>
+        </div>
+        <div class="more-info">
+          <h2>Mais Informações</h2>
+          <span>patricia.leonel@ig.com.br</span>
+          <span>(11) 99641-2897</span>
+          <div class="social">
+            <a href="https://www.instagram.com/patricia.pessoaleonelbarbosa/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/BuffetPatriciaFestas" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="tel:+5511985751831"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="flag-card">
+          <h2>Aceitamos</h2>
+          <img src="img/flag-card.png" alt="">
+        </div>
+      </div>
+      <div class="copyright">
+        <span>©Copyright 2020 Patrícia Festas</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/mapbox.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
